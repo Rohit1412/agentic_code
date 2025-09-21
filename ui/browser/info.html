@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Startup Investor Agent</title>
+  <link rel="icon" type="image/x-icon" href="adk_favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f14; --text: #e6e9f0; --muted: #9aa3b2; --panel: rgba(255,255,255,0.06); --border: rgba(255,255,255,0.14); --accent: #7c3aed; --accent2: #06b6d4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Archivo', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); padding: 24px; background: radial-gradient(1000px 500px at -10% -10%, #192033 10%, transparent 60%), linear-gradient(180deg, #0b0f14 0%, #0a101a 60%, #0b0f14 100%); }
+    .page { max-width: 840px; margin: 0 auto; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .brand { font-weight: 700; font-size: 18px; }
+    a { color: var(--muted); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--text); }
+    .card { border: 1px solid var(--border); border-radius: 12px; padding: 20px; background: var(--panel); backdrop-filter: blur(10px); }
+    h1 { font-size: 26px; margin-bottom: 8px; text-align: center; font-weight: 800; }
+    h2 { font-size: 16px; margin: 18px 0 8px; }
+    p { line-height: 1.7; font-size: 14px; color: var(--muted); }
+    ul { margin-left: 18px; color: var(--muted); font-size: 14px; }
+    li { margin: 6px 0; }
+    .muted { color: #7b8496; font-size: 12px; margin-top: 12px; }
+    .back { display: inline-block; margin-bottom: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); }
+    .back:hover { background: rgba(255,255,255,0.1); }
+    
+    /* Gradient text utility */
+    .gradient-text { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand">Startup Investor Agent</div>
+      <div><a href="index.html">Back to Chat</a></div>
+    </div>
+
+    <div class="card">
+      <h1 class="gradient-text">About this Tool</h1>
+      <p>
+        The Startup Investor Agent helps synthesize public data and founder‑provided materials to produce a concise,
+        actionable investment memo. It coordinates specialist agents (Data Analyst, Product/Tech Analyst, Risk Analyst)
+        to evaluate market, product quality, defensibility, traction, and risks.
+      </p>
+
+      <h2>Key Capabilities</h2>
+      <ul>
+        <li>Structured investment analysis and memo‑ready sections</li>
+        <li>Document‑aware reasoning: images, PDFs, text, and Office files</li>
+        <li>Live streaming responses with clear error messaging</li>
+      </ul>
+
+      <h2>Supported File Types</h2>
+      <ul>
+        <li>Images: PNG, JPG/JPEG, GIF, WEBP, BMP, TIFF/TIF, SVG</li>
+        <li>Documents: PDF, TXT, CSV</li>
+        <li>Office: Word (DOC/DOCX), PowerPoint (PPT/PPTX), Excel (XLS/XLSX)</li>
+        <li>Size limit: 10 MB per file</li>
+      </ul>
+
+      <h2>Limitations</h2>
+      <ul>
+        <li>Model understanding of complex Office formats may vary; best results often come from PDFs or extracted text.</li>
+        <li>Large or image‑heavy documents can reduce response quality due to token limits.</li>
+        <li>External data retrieval is limited to what’s provided or publicly accessible.</li>
+        <li>This tool provides analysis, not investment advice. Always perform independent diligence.</li>
+      </ul>
+
+      <h2>Privacy</h2>
+      <p>
+        Uploaded files are sent to the model as part of your session. Avoid sensitive data unless you have reviewed the
+        data handling and storage configuration for your deployment.
+      </p>
+
+      <p class="muted">Version: UI revamp 1.0</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-google-genai
+langchain-community
+langchain-mcp-tools
+playwright
+python-dotenv
+ddgs
+requests
+mcp
+google-adk
